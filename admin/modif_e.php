@@ -57,7 +57,7 @@ $ligne_experiences = $sql->fetch();
 					
 				 
 			</div>
-			<footer>
+			<footer class="pied">
 			<?php include("admin_footer.php") ;  ?>	
 			</footer>
 	</body>

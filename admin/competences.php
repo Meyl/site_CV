@@ -84,7 +84,7 @@ header('location: ../admin/competences.php');
 					
 				 ?>
 			</div>
-			<footer>
+			<footer class="pied">
 			<?php include("admin_footer.php") ;  ?>	
 			</footer>
 	</body>

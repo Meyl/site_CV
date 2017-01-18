@@ -100,7 +100,7 @@ header('location: ../admin/experiences.php');
 					
 				 ?>
 			</div>
-			<footer>
+			<footer class="pied">
 			<?php include("admin_footer.php") ;  ?>	
 			</footer>
 	</body>

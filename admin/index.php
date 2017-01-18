@@ -101,7 +101,7 @@
 			<p><?php echo $ligne['pseudo'].' '.$ligne['notes']; ?></p>
 			</div>
 
-			<footer>
+			<footer class="pied">
 			<?php include("admin_footer.php");  ?>	
 			</footer>
 			

@@ -52,17 +52,20 @@ if(isset($_POST['connexion'])){// on envoie le formulaire avec le name du bouton
                 <?php      ?>
             </legend>
             <label for="email">Email</label>
-            <input type="email" name="email" placeholder="Rentrez votre email" tabindex="1" size="35" aria-requierd="true">
-            <label for="mdp">Mot de passe</label>
+            <input type="email" name="email" placeholder="Rentrez votre email" tabindex="1" size="35" aria-requierd="true"><br>
+
+            <label for="mdp"> Mot de passe</label>
             <input type="password"  name="mdp" required tabindex="2" size="10" maxlength="50">
+
         	</fieldset>
+
         	<input type="reset" tabindex="3" value="Effacer" >
         	<input name="connexion" type="submit" tabindex="4" value="Me connecter" >
         	<p><a href="#">J'ai oublier mon mot de passe</a></p>
     	</form>
 		</div>
-		<footer>
-			pied
+		<footer class="pied">
+			<?php include("admin_footer.php");  ?>
 		</footer>
 	</body>
 </html>
