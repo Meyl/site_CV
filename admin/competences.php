@@ -1,4 +1,31 @@
 <?php require '../connexion/connexion.php'; ?>
+<?php
+session_start();//a mettre dans toute les pas session et identification 
+	// faire ensuite le require si on veut sut toutes les pages admin
+	if(isset($_SESSION['connexion']) && $_SESSION['connexion']=='connecté'){ //Si la personne est connecter et la valeur est bien celle de la page authentification
+
+		$id_utilisateur=$_SESSION['id_utilisateur'];
+		$prenom=$_SESSION['prenom'];
+		$nom=$_SESSION['nom'];
+		//echo $8SESSION['connexion']; verification de la connexion
+	}else{//l'utilisateur n'est pas connecter
+		header('location:authentification.php'); 
+	}
+
+	if(isset($_GET['deconnect'])){
+
+		$_SESSION ['connexion']='';//on vide les variables de session
+		$_SESSION ['id_utilisateur']='';
+		$_SESSION ['prenom']='';
+		$_SESSION ['nom']='';
+
+		unset($_SESSION['connexion']);// on supprime cette variable
+
+		session_destroy();// on detruit la session
+
+		header('location:../index.php');
+	}
+  ?>
 <?php //Isertion d'une competences 
 
 if (isset($_POST['competence'])){
@@ -10,7 +37,6 @@ if (isset($_POST['competence'])){
 		header("location: ../admin/competences.php");
 		exit();
 	}
-
 }
 //Suppression d'une competence
 if(isset($_GET['id_competence'])){
@@ -19,10 +45,7 @@ if(isset($_GET['id_competence'])){
 	$pdo -> query($sql);
 header('location: ../admin/competences.php');
 }
-
-
-
-?> 
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -32,18 +55,7 @@ header('location: ../admin/competences.php');
 			<link rel="stylesheet" type="text/css" href="../framework/font-awesome-4.7.0/css/font-awesome.min.css">
 	</head>
 		<body>
-		 	<header>
-				<h1>Yannis Admin</h1>
-				<nav class="liste">
-					<ul>
-						<li><a href="index.php">Accueil</a></li>
-						<li><a href="utilisateur.php">Utilisateur</a></li>
-						<li><a href="experiences.php">Experiences</a></li>
-						<li><a href="loisir.php">Loisir</a></li>
-						<li><a href="competences.php">competences</a></li>
-					</ul>
-				</nav>
-			</header>
+		 	
 			<h2>Competences</h2>
 			<div>
 				<?php //Affiche un seul enregistrement

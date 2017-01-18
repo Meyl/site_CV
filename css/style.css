@@ -85,3 +85,11 @@ p{
 a{
 	float: center;
 }
+#form_a{
+	border:outset;
+	width:350px;
+	height:75px;
+	margin:125px;
+	padding: 50px;
+
+}

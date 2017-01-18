@@ -43,7 +43,7 @@ if(isset($_POST['connexion'])){// on envoie le formulaire avec le name du bouton
 				<h1>Yannis Admin</h1>
 				
 			</header>
-		<div>
+		<div id="form_a">
 		<form action="authentification.php" method="POST">
         <fieldset>
             <legend>
@@ -55,12 +55,11 @@ if(isset($_POST['connexion'])){// on envoie le formulaire avec le name du bouton
             <input type="email" name="email" placeholder="Rentrez votre email" tabindex="1" size="35" aria-requierd="true">
             <label for="mdp">Mot de passe</label>
             <input type="password"  name="mdp" required tabindex="2" size="10" maxlength="50">
-        </fieldset>
-        <input type="reset" tabindex="3" value="Effacer" >
-        <input name="connexion" type="submit" tabindex="4" value="Me connecter" >
-        <p><a href="#">J'ai oublier mon mot de passe</a></p>
-
-    </form>
+        	</fieldset>
+        	<input type="reset" tabindex="3" value="Effacer" >
+        	<input name="connexion" type="submit" tabindex="4" value="Me connecter" >
+        	<p><a href="#">J'ai oublier mon mot de passe</a></p>
+    	</form>
 		</div>
 		<footer>
 			pied
