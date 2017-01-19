@@ -1,4 +1,32 @@
 <!DOCTYPE html>
+<?php
+	 require('connexion/connexion.php');
+	$bdd = $pdo -> query ("SELECT * FROM t_utilisateur");
+    $utilisateur = $bdd -> fetch();
+
+    $bdd = $pdo -> query ("SELECT * FROM t_titre_cv");
+    $titrecv = $bdd -> fetchAll();
+
+   $bdd = $pdo -> query ("SELECT * FROM t_competences ");
+    $competences = $bdd -> fetchAll();
+
+   $bdd = $pdo -> query ("SELECT * FROM t_experiences ");
+    $experiences = $bdd -> fetchAll();
+
+   $bdd = $pdo -> query ("SELECT * FROM t_loisirs ");
+    $loisirs = $bdd -> fetchAll();
+
+    echo 'utilisateur : ';
+    print_r($utilisateur);
+    echo 'titreCV : ';
+    print_r($titrecv);
+    echo 'experience : ';
+    print_r($experiences);
+    echo 'competence : ';
+    print_r($competences);
+    echo 'loisirs : ';
+    print_r($loisirs);
+  ?>
 <html lang="en">
 
 <head>
