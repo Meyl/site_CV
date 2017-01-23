@@ -37,21 +37,21 @@ if (isset($_POST['titre_e'])){
 		$date = addslashes($_POST['date']);
 		$description = addslashes($_POST['description']);
 
-		$pdo->exec("INSERT INTO t_experiences VALUES (NULL, '$titre_e', '$sous_titre_e', '$date', '$description') ");
+		$pdo->exec("INSERT INTO t_experiences VALUES (NULL, '$titre_e', '$sous_titre_e', '$date', '$description', '1') ");
 
 		header("location: ../admin/experiences.php");
 		exit();
 	}
 
 }
-/*//Suppression d'une experiences
+//Suppression d'une experiences
 if(isset($_GET['id_experiences'])){
 	$efface = $_GET['id_experiences'];
 	$sql = "DELETE FROM t_experiences WHERE id_experiences = '$efface' ";
 	$pdo -> query($sql);
 header('location: ../admin/experiences.php');
 }
-*/
+
 
 
 ?>

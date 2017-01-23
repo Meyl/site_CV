@@ -11,12 +11,19 @@
     $competences = $bdd -> fetchAll();
 
    $bdd = $pdo -> query ("SELECT * FROM t_experiences ");
-    $experiences = $bdd -> fetchAll();
+   $experiences = $bdd -> fetchAll();
+
+    
+  //EXPERIENCES  
+    $sql_exp = $pdo->query("SELECT * FROM t_experiences");
+    $sql_exp -> execute();
+    $nb_exp= $sql_exp->rowCount(); 
+
 
    $bdd = $pdo -> query ("SELECT * FROM t_loisirs ");
     $loisirs = $bdd -> fetchAll();
 
-    echo 'utilisateur : ';
+    /*echo 'utilisateur : ';
     print_r($utilisateur);
     echo 'titreCV : ';
     print_r($titrecv);
@@ -25,7 +32,7 @@
     echo 'competence : ';
     print_r($competences);
     echo 'loisirs : ';
-    print_r($loisirs);
+    print_r($loisirs);*/
   ?>
 <html lang="en">
 
@@ -44,11 +51,14 @@
 
     <!-- Theme CSS -->
     <link href="front/css/freelancer.min.css" rel="stylesheet">
+    <link href="front/css/freelancer.css" rel="stylesheet">
+    <link href="front/css/style.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="front/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -82,7 +92,7 @@
                         <a href="#portfolio">Portfolio</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">About</a>
+                        <a href="#about">A propos</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#contact">Contact</a>
@@ -99,13 +109,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="front/img/profile.png" alt="">
+                    <img class=" img-circle img-responsive" style="width:20%" src="front/img/moi.jpg" alt="">
                     <div class="intro-text">
                         <span class="name"><?php echo $utilisateur['nom'].' '.$utilisateur['prenom'];  ?></span>
                         <hr class="star-light">
                         <span class="skills"><?php 
                         $i = 0;
-
                         while($i < count($competences)){
                         	if($i > 0){echo' / ';}
                         	echo $competences[$i]['competence'];
@@ -196,16 +205,64 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>About</h2>
+                    <h2>A propos</h2>
                     <hr class="star-light">
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                	
+                	<?php //print_r($competences);
+
+            		$i=0;
+                	while ( $i < count($experiences) ) {?>
+                	<h3>experiences</h3>
+                		<p><?php echo $experiences[$i]['titre_e']; ?></p>
+                		<p><?php echo $experiences[$i]['sous_titre_e']; ?></p><hr/>
+                		<p><?php echo $experiences[$i]['date']; ?></p><hr/>
+                		<p><?php echo $experiences[$i]['description']; ?></p><hr/>
+                		<?php
+
+                		$i++;  	# code...
+                	}
+                	$i=0;
+                	while ( $i < count($competences) ) {?>
+                	<h3>competences</h3>
+                		<p><?php echo $competences[$i]['id_competence']; ?></p>
+                		<p><?php echo $competences[$i]['competence']; ?></p><hr/>
+                		<hr/><?php
+                		
+                		$i++;  	# code...
+                	}
+                	?>
+
+                	<h3> loisir </h3>
+                	<?php
+                	$i=0;
+                	while ( $i < count($loisirs) ) {?>
+  
+                		<p><?php echo $loisirs[$i]['loisir']; ?></p>
+                		<p><?php echo $loisirs[$i]['titre_loisir']; ?></p><hr/>
+                	 	</p><hr/><?php
+                		
+                		$i++;  	# code...
+                	}
+                	//echo $experiences ['titre_e'];
+                	 ?>
+
+					<?php
+				    /*while ($resultat=$sql_exp->fetch()){
+				    echo '<tr><td>'.$resultat['titre_e'].'</td><td>'.$resultat['sous_titre_e'].'</td><td>'.$resultat['date'].'</td><td>'.$resultat['description'].'</td></tr>';}*/
+				    ?>
+
+
+
+                    <p> </p>
                 </div>
                 <div class="col-lg-4">
-                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+
+                	 
+                    <p></p>
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <a href="#" class="btn btn-lg btn-outline">
@@ -221,7 +278,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Contact Me</h2>
+                    <h2>Me contacter</h2>
                     <hr class="star-primary">
                 </div>
             </div>
@@ -232,22 +289,22 @@
                     <form name="sentMessage" id="contactForm" novalidate>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Name</label>
-                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                                <label>Nom</label>
+                                <input type="text" class="form-control" placeholder="Nom" id="name" required data-validation-required-message="Please enter your name.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Email Address</label>
-                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                                <label>Adresse email</label>
+                                <input type="email" class="form-control" placeholder="Adresse email" id="email" required data-validation-required-message="Please enter your email address.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Phone Number</label>
-                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                <label>Telephone</label>
+                                <input type="tel" class="form-control" placeholder="Telephone" id="phone" required data-validation-required-message="Please enter your phone number.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -262,7 +319,7 @@
                         <div id="success"></div>
                         <div class="row">
                             <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Send</button>
+                                <button type="submit" class="btn btn-success btn-lg">Envoyer</button>
                             </div>
                         </div>
                     </form>
@@ -278,8 +335,7 @@
                 <div class="row">
                     <div class="footer-col col-md-4">
                         <h3>Location</h3>
-                        <p>3481 Melrose Place
-                            <br>Beverly Hills, CA 90210</p>
+                        <p><?php echo $utilisateur['adresse'].' '.$utilisateur['code_postal'].' '.$utilisateur['ville']; ?></p>
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>Around the Web</h3>
@@ -312,7 +368,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; Your Website 2016
+                        Copyright &copy; Miyagi 2017
                     </div>
                 </div>
             </div>

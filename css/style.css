@@ -1,6 +1,7 @@
 body{
 	background-color:#FFFFFF;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Arsenal', sans-serif;
+	/*font-family: 'Ubuntu', sans-serif;*/
 	/*font-family: 'Merriweather', serif;*/
 }
 header{
@@ -15,7 +16,7 @@ header{
 h1{
 	text-align: center;
 	display: inline-block;
-	color:#FFFFFFmeylo;
+	color:#FFFFFF;
 }
 #fiche{
 	width:100%;
