@@ -20,8 +20,8 @@
     $nb_exp= $sql_exp->rowCount(); 
 
 
-   $bdd = $pdo -> query ("SELECT * FROM t_loisirs ");
-    $loisirs = $bdd -> fetchAll();
+   $bdd = $pdo -> query ("SELECT * FROM t_loisir ");
+    $loisir = $bdd -> fetchAll();
 
     /*echo 'utilisateur : ';
     print_r($utilisateur);
@@ -52,13 +52,14 @@
     <!-- Theme CSS -->
     <link href="front/css/freelancer.min.css" rel="stylesheet">
     <link href="front/css/freelancer.css" rel="stylesheet">
-    <link href="front/css/style.css" rel="stylesheet">
+  
 
     <!-- Custom Fonts -->
     <link href="front/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
+     	Q<link href="front/css/style.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -109,7 +110,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class=" img-circle img-responsive" style="width:20%" src="front/img/moi.jpg" alt="">
+                    <img class=" img-circle img-responsive" style="width:20%" src="front/img/hbk.jpg" alt="">
                     <div class="intro-text">
                         <span class="name"><?php echo $utilisateur['nom'].' '.$utilisateur['prenom'];  ?></span>
                         <hr class="star-light">
@@ -127,7 +128,7 @@
     </header>
 
     <!-- Portfolio Grid Section -->
-    <section id="portfolio">
+    <section id="portfolio" style="display:none;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -210,46 +211,54 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                	
+                
+                	<div class="col-md-4 col-md-offset-1">
+                	<h2>experiences</h2>
                 	<?php //print_r($competences);
 
             		$i=0;
                 	while ( $i < count($experiences) ) {?>
-                	<h3>experiences</h3>
-                		<p><?php echo $experiences[$i]['titre_e']; ?></p>
-                		<p><?php echo $experiences[$i]['sous_titre_e']; ?></p><hr/>
-                		<p><?php echo $experiences[$i]['date']; ?></p><hr/>
-                		<p><?php echo $experiences[$i]['description']; ?></p><hr/>
+                		<h3><?php echo $experiences[$i]['titre_e']; ?></h3>
+                		<p><?php echo $experiences[$i]['sous_titre_e']; ?></p>
+                		<p><?php echo $experiences[$i]['date']; ?></p>
+                		<p><?php echo $experiences[$i]['description']; ?></p>
+                		<hr/>
                 		<?php
 
                 		$i++;  	# code...
                 	}
+                	?>
+                	</div>
+                	<div class="col-md-4 col-md-offset-2" >
+                	<h3>competences</h3> <?php
                 	$i=0;
                 	while ( $i < count($competences) ) {?>
-                	<h3>competences</h3>
-                		<p><?php echo $competences[$i]['id_competence']; ?></p>
-                		<p><?php echo $competences[$i]['competence']; ?></p><hr/>
-                		<hr/><?php
+                	
+                		<p><?php echo $competences[$i]['competence']; ?></p>
+                		<hr/>
+                		<?php
                 		
                 		$i++;  	# code...
                 	}
                 	?>
-
+                	</div>
+                	<div class="col-md-4 col-md-offset-2">
                 	<h3> loisir </h3>
                 	<?php
                 	$i=0;
-                	while ( $i < count($loisirs) ) {?>
-  
-                		<p><?php echo $loisirs[$i]['loisir']; ?></p>
-                		<p><?php echo $loisirs[$i]['titre_loisir']; ?></p><hr/>
-                	 	</p><hr/><?php
+                	while ( $i < count($loisir) ) {?>
+  						<div class="col-md-6">
+	                		<p><?php echo $loisir[$i]['loisir']; ?></p>
+	                		<p><?php echo $loisir[$i]['titre_loisir']; ?></p>
+	                	 	<hr/>
+	                	 </div>
+                	 	<?php
                 		
                 		$i++;  	# code...
                 	}
                 	//echo $experiences ['titre_e'];
                 	 ?>
-
+                	 </div>
 					<?php
 				    /*while ($resultat=$sql_exp->fetch()){
 				    echo '<tr><td>'.$resultat['titre_e'].'</td><td>'.$resultat['sous_titre_e'].'</td><td>'.$resultat['date'].'</td><td>'.$resultat['description'].'</td></tr>';}*/
@@ -258,7 +267,7 @@
 
 
                     <p> </p>
-                </div>
+               
                 <div class="col-lg-4">
 
                 	 
