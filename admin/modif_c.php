@@ -1,10 +1,25 @@
 <?php require '../connexion/connexion.php'; ?>
-<?php //Recuperation de la competence a modifier
+
+
+<?php 
+//mise a jour de la compétence
+if(isset($_POST['competence'])){
+	if ($_POST['competence']!='') { // ! et = '' veut n'est pas vide
+		$competence = addslashes($_POST['competence']); //addslashes permet d'echapper les contenus  pour eviter le piratage 
+		$id_competence = $_POST['id_competence'];
+
+		$pdo->exec(" UPDATE t_competences  SET competence='$competence' WHERE id_competence='$id_competence' ");
+		header('location: competences.php');
+		exit();
+	}
+
+}
+
+
+//Recuperation de la compétence a modifier
 $id_competence = $_GET ['id_competence'];
 $sql= $pdo->query(" SELECT * FROM t_competences WHERE id_competence = '$id_competence'");
 $ligne_competence = $sql->fetch();
-
-/**/
 
 
 
@@ -20,7 +35,7 @@ $ligne_competence = $sql->fetch();
 		<body>
 		 	<header>
 				<h1>Yannis Admin</h1>
-				<?php echo $ligne_competence['id_competence'];  ?>
+				
 				<nav class="liste">
 					<ul>
 						<li><a href="index.php">Accueil</a></li>
@@ -33,14 +48,13 @@ $ligne_competence = $sql->fetch();
 			</header>
 			<h2> Modif Competences</h2>
 			<div>
-			
-			</div>
-			<div>
 				<form action="modif_c.php" method="post" class="formulaire">
 					<fieldset>
 						<label>Competences</label>
 						<input type="text" name="competence" value="<?php echo $ligne_competence['competence'];  ?>">
-						<input hidden name="id_competence" value="<?php echo $ligne_competence['competence'];  ?>">
+
+						<input hidden name="id_competence" value="<?php echo $ligne_competence['id_competence'];  ?>">
+
 
 						<label></label>
 						<input type="submit" value="modifier la compétences">

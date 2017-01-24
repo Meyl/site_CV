@@ -114,13 +114,15 @@
                     <div class="intro-text">
                         <span class="name"><?php echo $utilisateur['nom'].' '.$utilisateur['prenom'];  ?></span>
                         <hr class="star-light">
-                        <span class="skills"><?php 
-                        $i = 0;
-                        while($i < count($competences)){
-                        	if($i > 0){echo' / ';}
-                        	echo $competences[$i]['competence'];
-                        	$i++;
-                        	}?></span>
+                        <span class="skills">
+                        <?php //  
+                        //$i = 0;
+                        //while($i < count($competences)){
+                        	//if($i > 0){echo' / ';}
+                        	//echo $competences[$i]['competence'];
+                        	//$i++;
+                        ?>
+                        </span>
                     </div>
                 </div>
             </div>
