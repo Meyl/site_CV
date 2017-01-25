@@ -43,7 +43,7 @@ if(isset($_GET['id_loisirs'])){
 	$efface = $_GET[id_loisirs];
 	$sql = "DELETE FROM t_loisirs WHERE id_loisirs = '$efface' ";
 	$pdo -> query($sql);
-header('location: ../admin/loisirss.php');
+header('location: ../admin/loisirs.php');
 }
 ?>
 <!DOCTYPE html>
@@ -55,7 +55,9 @@ header('location: ../admin/loisirss.php');
 			<link rel="stylesheet" type="text/css" href="../framework/font-awesome-4.7.0/css/font-awesome.min.css">
 	</head>
 		<body>
-		 	
+			 	<header>
+				<?php include("admin_nav.php");  ?>
+			    </header>
 			<h2>Loisirs</h2>
 			<div>
 				<?php //Affiche un seul enregistrement

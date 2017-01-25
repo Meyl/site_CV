@@ -1,5 +1,5 @@
 body{
-	background-color:#FFFFFF;
+	background-image: url(ciel.jpg);
 	font-family: 'Arsenal', sans-serif;
 	/*font-family: 'Ubuntu', sans-serif;*/
 	/*font-family: 'Merriweather', serif;*/
@@ -9,7 +9,7 @@ header{
 	height:50px;
 	/*width*/
 	background-color:#4169E1;
-	border-radius: 15px 50px;
+	border-radius: 15px 15px 15px 15px;
 
 }
 
@@ -75,8 +75,8 @@ footer{
 	height:70px;
 	/*width*/
 	background-color:#4169E1;
-	border-radius: 15px 50px;
-	margin-bottom: 0%;
+	border-radius: 15px 15px 15px 15px;
+	margin-bottom: 0px;
 
 
 }
@@ -98,6 +98,16 @@ a{
 	margin:;
 	padding: 50px;
 	float:;
+
+
+}
+
+#date{
+	height:500px; 
+	width:250px;
+	/*box-shadow:35px; */
+	background-color:blue;
+	padding:50px;
 
 
 }

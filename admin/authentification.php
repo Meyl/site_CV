@@ -40,8 +40,7 @@ if(isset($_POST['connexion'])){// on envoie le formulaire avec le name du bouton
 	</head>
 		<body>
 		 	<header>
-				<h1>Yannis Admin</h1>
-				
+				<?php include("admin_nav.php");  ?>
 			</header>
 		<div id="form_a">
 		<form action="authentification.php" method="POST">

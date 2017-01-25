@@ -20,7 +20,7 @@
     $nb_exp= $sql_exp->rowCount(); 
 
 
-   $bdd = $pdo -> query ("SELECT * FROM t_loisir ");
+   $bdd = $pdo -> query ("SELECT * FROM t_loisirs ");
     $loisir = $bdd -> fetchAll();
 
     /*echo 'utilisateur : ';
@@ -245,13 +245,13 @@
                 	?>
                 	</div>
                 	<div class="col-md-4 col-md-offset-2">
-                	<h3> loisir </h3>
+                	<h3> loisirs </h3>
                 	<?php
                 	$i=0;
                 	while ( $i < count($loisir) ) {?>
   						<div class="col-md-6">
-	                		<p><?php echo $loisir[$i]['loisir']; ?></p>
-	                		<p><?php echo $loisir[$i]['titre_loisir']; ?></p>
+	                		<p><?php echo $loisirs[$i]['loisir']; ?></p>
+	                		<p><?php echo $loisirs[$i]['titre_loisir']; ?></p>
 	                	 	<hr/>
 	                	 </div>
                 	 	<?php

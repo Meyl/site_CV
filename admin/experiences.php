@@ -20,7 +20,7 @@ session_start();//a mettre dans toute les pas session et identification
 		$_SESSION ['prenom']='';
 		$_SESSION ['nom']='';
 
-		unset($_SESSION['connexion']);// on supprime cette variable
+		unset($_SESSION['connexion']); // on supprime cette variable
 
 		session_destroy();// on detruit la session
 
@@ -65,14 +65,15 @@ header('location: ../admin/experiences.php');
 			<link rel="stylesheet" type="text/css" href="../framework/font-awesome-4.7.0/css/font-awesome.min.css">
 	</head>
 		<body>
-		 	
+			<header>
+		 	<?php include("admin_nav.php");  ?>	
+			</header>
 			<h2>Experiences</h2>
 			<div>
 				<?php //Affiche un seul enregistrement
 				$sql= $pdo->prepare("SELECT * FROM t_experiences");
 				$sql->execute();
 				$nbr_experiences = $sql->rowCount();
-				
 				?>
 			</div>
 			<p>il y a <?php echo $nbr_experiences; ?> experiences </p>

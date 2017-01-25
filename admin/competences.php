@@ -55,7 +55,9 @@ header('location: ../admin/competences.php');
 			<link rel="stylesheet" type="text/css" href="../framework/font-awesome-4.7.0/css/font-awesome.min.css">
 	</head>
 		<body>
-		 	
+			<header>
+		 	<?php include("admin_nav.php");  ?>
+		 	</header>
 			<h2>Competences</h2>
 			<div>
 				<?php //Affiche un seul enregistrement
