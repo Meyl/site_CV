@@ -1,8 +1,11 @@
 body{
-	background-image: url(ciel.jpg);
+	background-image: url(../img/vue.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
 	font-family: 'Arsenal', sans-serif;
 	/*font-family: 'Ubuntu', sans-serif;*/
 	/*font-family: 'Merriweather', serif;*/
+	background-color: #F5DEB3
 }
 header{
 	
@@ -10,6 +13,10 @@ header{
 	/*width*/
 	background-color:#4169E1;
 	border-radius: 15px 15px 15px 15px;
+	margin: 50px;
+	margin-right: 0%;
+	margin-left: 0%;
+	margin-bottom: 50px;
 
 }
 
@@ -17,6 +24,7 @@ h1{
 	text-align: center;
 	display: inline-block;
 	color:#FFFFFF;
+
 }
 #fiche{
 	width:100%;
@@ -70,6 +78,7 @@ li{
 }
 img{
 	border-radius: 50px;
+	margin-top: 1px;
 }
 footer{
 	height:70px;
@@ -77,6 +86,7 @@ footer{
 	background-color:#4169E1;
 	border-radius: 15px 15px 15px 15px;
 	margin-bottom: 0px;
+	margin-top: 20px;
 
 
 }
@@ -95,19 +105,46 @@ a{
 	border-radius: 30px 15px ;
 	width:350px;
 	height:75px;
-	margin:;
+	margin-left:533px;
 	padding: 50px;
-	float:;
+	background-color: rgba(255, 255, 255, 0.2);
+	
 
 
 }
 
 #date{
-	height:500px; 
-	width:250px;
-	/*box-shadow:35px; */
-	background-color:blue;
-	padding:50px;
+	height:200px; 
+	width:500px;
+	background-color:#FFFFFF;
+	border:groove  ;
+	border-radius:10px;
+	border-color:#4169E1; 
+	margin: auto;
+	-webkit-box-shadow: 5px 5px 5px 5px #3150AB;
+	box-shadow: 5px 5px 5px 5px #3150AB;
+	
+
+
+}
+
+#salut{
+	
+
+}
+.txt{
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 50px;
+}
+.fa{
+	margin-left:30px;
+	padding-left: 7px;
+
+}
+#authentification{
+	margin-left:605px;
 
 
 }

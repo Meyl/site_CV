@@ -1,3 +1,4 @@
+<?php require '../connexion/connexion.php'; ?>
 <?php //Affiche un seul enregistrement
 				$sql= $pdo->query("SELECT * FROM t_utilisateur");
 				$ligne = $sql->fetch();

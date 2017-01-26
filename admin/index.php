@@ -29,8 +29,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8"
-			<title>Site CV : <?php echo $_SESSION['prenom'].' '.$_SESSION['nom']; ?> </title>
+		<meta charset="utf-8">
+			<title> Site CV : <?php echo $_SESSION['prenom'].' '.$_SESSION['nom']; ?> </title>
 			<link rel="stylesheet" type="text/css" href="../css/style.css">
 			<link rel="stylesheet" type="text/css" href="../framework/font-awesome-4.7.0/css/font-awesome.min.css">
 			<link href="https://fonts.googleapis.com/css?family=Merriweather|Ubuntu" rel="stylesheet">
@@ -40,10 +40,18 @@
 			<?php include("admin_nav.php");  ?>
 			</header>
 			<div id="date">
-			<p>Bonjour Yannis nous le <?php $date = date_create('2017-01-25');echo date_format($date, 'Y-m-d H:i:s');?></p>
+			
+			<h2 id="salut">Hello Yannis</h2>
+		
+
+			<?php $date = date("d M Y"); $heure = date("H:i:s");?>
+			<p class="txt" style="display:inline-block;margin-top: 58px;margin-left: 35px;"><?php echo 'Nous sommes le '. $date . ' et il est ' . $heure; ?> </p>
+           
+			<img src="../img/HypeBart_IG.jpg" style="margin-bottom: 0px;float:left" alt="img">
+
 			</div>
 		</body>
-			<footer class="pied">
+			<footer>
 			<?php include("admin_footer.php");  ?>	
 			</footer>
 </html>

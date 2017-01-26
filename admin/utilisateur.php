@@ -57,7 +57,7 @@
 			</div>
 			<div class="titre">
 			<h3>Avatar</h3>
-			<p><img src="../img/<?php echo $ligne['avatar']; ?>" width="99px" height="" "><p><br>
+			<p><img src="../img/<?php echo $ligne['avatar']; ?>" width="99px" height=""><p><br>
 			</div>
 			<div class="titre">
 			<h3>Pseudo</h3>
