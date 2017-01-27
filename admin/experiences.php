@@ -68,28 +68,27 @@ header('location: ../admin/experiences.php');
 			<header>
 		 	<?php include("admin_nav.php");  ?>	
 			</header>
-			<h2>Experiences</h2>
-			<div>
+			
+			<div class="formulaire">
+			<h2 class="titre">Experiences</h2>
 				<?php //Affiche un seul enregistrement
 				$sql= $pdo->prepare("SELECT * FROM t_experiences");
 				$sql->execute();
 				$nbr_experiences = $sql->rowCount();
 				?>
-			</div>
 			<p>il y a <?php echo $nbr_experiences; ?> experiences </p>
-			<div>
-				<form action="experiences.php" method="post" class="formulaire">
+				<form action="experiences.php" method="post" >
 					<fieldset>
-						<label>titre experiences</label>
+						<label>Titre expériences</label>
 						<input type="text" name="titre_e">
-						<label>sous-titre experiences</label>
+						<label>Sous-titre expériences</label>
 						<input type="text" name="sous_titre_e">
 						<label>Date</label>
 						<input type="text" name="date">
-						<label>Description</label>
+						<label>Déscription</label>
 						<textarea name="description"></textarea>
 						<label></label>
-						<input type="submit" value="inserer une expérience">
+						<input type="submit" value="inserer une Expérience">
 
 					</fieldset>
 				</form>
@@ -98,8 +97,8 @@ header('location: ../admin/experiences.php');
 					<a href="modif_e.php?id_experiences='. $ligne['id_experiences'].'">Modifier</a>
 					<a href="experiences.php?id_experiences='. $ligne['id_experiences'].'">Supprimer</a> <br>';
 				}
-					
 				 ?>
+					
 			</div>
 			<footer class="pied">
 			<?php include("admin_footer.php") ;  ?>	

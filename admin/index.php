@@ -29,6 +29,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+
 		<meta charset="utf-8">
 			<title> Site CV : <?php echo $_SESSION['prenom'].' '.$_SESSION['nom']; ?> </title>
 			<link rel="stylesheet" type="text/css" href="../css/style.css">
@@ -36,9 +37,11 @@
 			<link href="https://fonts.googleapis.com/css?family=Merriweather|Ubuntu" rel="stylesheet">
 	</head>
 		<body>
-			<header>
+			<header id="main-header">
 			<?php include("admin_nav.php");  ?>
 			</header>
+			<section id="main-content">
+
 			<div id="date">
 			
 			<h2 id="salut">Hello Yannis</h2>
@@ -50,8 +53,11 @@
 			<img src="../img/HypeBart_IG.jpg" style="margin-bottom: 0px;float:left" alt="img">
 
 			</div>
-		</body>
-			<footer>
+		
+			</section>
+
+			<footer id="main-footer">
 			<?php include("admin_footer.php");  ?>	
 			</footer>
+			</body>
 </html>

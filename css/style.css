@@ -13,10 +13,10 @@ header{
 	/*width*/
 	background-color:#4169E1;
 	border-radius: 15px 15px 15px 15px;
-	margin: 50px;
+	margin:0;
 	margin-right: 0%;
 	margin-left: 0%;
-	margin-bottom: 50px;
+
 
 }
 
@@ -68,10 +68,16 @@ li{
 
 }
 	
-.titre{
-	background-color:#40E0D0; 
+.infos{
+	background-color:#40E0D0;
+	border:solid; 
 	border-radius: 15px 50px 30px;
 	width: 200px;
+	display: inline-block;
+	-moz-column-width: 12em;
+    -moz-columns: 12em;
+    -webkit-columns: 12em;
+    columns: 12em;
 }
 .icon{
 
@@ -81,8 +87,10 @@ img{
 	margin-top: 1px;
 }
 footer{
+	position:fixed;
+	bottom: 0;
 	height:70px;
-	/*width*/
+	width:100%;
 	background-color:#4169E1;
 	border-radius: 15px 15px 15px 15px;
 	margin-bottom: 0px;
@@ -147,4 +155,16 @@ a{
 	margin-left:605px;
 
 
+}
+.formulaire{
+/*	height:100%; */
+	width:400px;
+	border-radius: 30px 14px 50px 11px;
+	background-color:#40E0D0;
+	border: solid;
+	margin-left: 500px
+
+}
+.titre{
+	text-align: center;
 }

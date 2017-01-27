@@ -58,20 +58,17 @@ header('location: ../admin/competences.php');
 			<header>
 		 	<?php include("admin_nav.php");  ?>
 		 	</header>
-			<h2>Competences</h2>
-			<div>
+			<div class="formulaire">
+				<h2 class="titre">Compétences</h2>
 				<?php //Affiche un seul enregistrement
 				$sql= $pdo->prepare("SELECT * FROM t_competences");
 				$sql->execute();
 				$nbr_competences = $sql->rowCount();
-				
 				?>
-			</div>
-			<p>il y a <?php echo $nbr_competences; ?> compétences </p>
-			<div>
-				<form action="competences.php" method="post" class="formulaire">
+				<p>il y a <?php echo $nbr_competences; ?> compétences </p>
+				<form action="competences.php" method="post" >
 					<fieldset>
-						<label>Competences</label>
+						<label>Compétences</label>
 						<input type="text" name="competence">
 						<label></label>
 						<input type="submit" value="Insérer mes compétences">
