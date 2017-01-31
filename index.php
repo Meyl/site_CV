@@ -21,7 +21,7 @@
 
 
    $bdd = $pdo -> query ("SELECT * FROM t_loisirs ");
-    $loisir = $bdd -> fetchAll();
+    $loisirs = $bdd -> fetchAll();
 
     /*echo 'utilisateur : ';
     print_r($utilisateur);
@@ -46,6 +46,13 @@
 
     <title>Freelancer - Start Bootstrap Theme</title>
 
+    <!--  Ajout du parallax -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="front/js/parallax.js"></script>
+    <script src="front/js/main.js"></script>
+
+
     <!-- Bootstrap Core CSS -->
     <link href="front/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -59,7 +66,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
-     	Q<link href="front/css/style.css" rel="stylesheet">
+     <link href="front/css/style.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -73,6 +80,8 @@
 <body id="page-top" class="index">
 
     <!-- Navigation -->
+
+    <div id="wrap">
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -80,7 +89,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand" href="#page-top">Mon Site CV</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -106,13 +115,18 @@
     </nav>
 
     <!-- Header -->
+<div class="parallax-window" data-parallax="scroll" data-image-src="front/img/vue.jpg">
+                    
+               
     <header>
+        
         <div class="container">
             <div class="row">
+
                 <div class="col-lg-12">
                     <img class=" img-circle img-responsive" style="width:20%" src="front/img/hbk.jpg" alt="">
                     <div class="intro-text">
-                        <span class="name"><?php echo $utilisateur['nom'].' '.$utilisateur['prenom'];  ?></span>
+                        <span class="name"><?php echo $utilisateur['prenom'].' '.$utilisateur['nom'];  ?></span>
                         <hr class="star-light">
                         <span class="skills">
                         <?php //  
@@ -128,7 +142,7 @@
             </div>
         </div>
     </header>
-
+ </div>
     <!-- Portfolio Grid Section -->
     <section id="portfolio" style="display:none;">
         <div class="container">
@@ -248,7 +262,7 @@
                 	<h3> loisirs </h3>
                 	<?php
                 	$i=0;
-                	while ( $i < count($loisir) ) {?>
+                	while ( $i < count($loisirs) ) {?>
   						<div class="col-md-6">
 	                		<p><?php echo $loisirs[$i]['loisir']; ?></p>
 	                		<p><?php echo $loisirs[$i]['titre_loisir']; ?></p>
@@ -277,7 +291,7 @@
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <a href="#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Theme
+                        <i class="fa fa-download"></i> Telecharger mon CV
                     </a>
                 </div>
             </div>
@@ -286,6 +300,7 @@
 
     <!-- Contact Section -->
     <section id="contact">
+    <div class="parallax-window" data-parallax="scroll" data-image-src="front/img/vue.jpg"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -345,7 +360,7 @@
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-4">
-                        <h3>Location</h3>
+                        <h3>Adresse</h3>
                         <p><?php echo $utilisateur['adresse'].' '.$utilisateur['code_postal'].' '.$utilisateur['ville']; ?></p>
                     </div>
                     <div class="footer-col col-md-4">
@@ -369,7 +384,7 @@
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>About Freelancer</h3>
+        
                         <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
                     </div>
                 </div>

@@ -168,3 +168,8 @@ a{
 .titre{
 	text-align: center;
 }
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}

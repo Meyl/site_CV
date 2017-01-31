@@ -85,7 +85,7 @@ header('location: ../admin/experiences.php');
 						<input type="text" name="sous_titre_e">
 						<label>Date</label>
 						<input type="text" name="date">
-						<label>Déscription</label>
+						<label>Déscription</label>jh;h,ju
 						<textarea name="description"></textarea>
 						<label></label>
 						<input type="submit" value="inserer une Expérience">

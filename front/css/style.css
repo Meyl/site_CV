@@ -1,8 +1,12 @@
-body{
-	font-family: 'Arsenal', sans-serif;
-	/*font-family: 'Ubuntu', sans-serif;*/
-	/*font-family: 'Merriweather', serif;*/
+/*header{
+	background:url('../img/vue.jpg') no-repeat;
 }
+*/
+#contact{
+
+	background:none;
+}
+
 #portofiolio{
  
  display: none;
@@ -21,3 +25,10 @@ body{
 
 	
 }
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+

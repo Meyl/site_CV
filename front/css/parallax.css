@@ -1,0 +1,135 @@
+body {
+	margin: 0; padding: 0; /* annulation des marges */
+	overflow: hidden; /* on cache le débordement de contenu */
+	color: #fff;
+	background-image: url(../img/storm.jpg);
+	background-repeat: no-repeat;
+}
+ 
+#wrap {
+	/* position du conteneur pour le préparer à bouger */
+	position: relative;
+	top: 0;
+	/* on prépare la transition à venir */
+	-webkit-transition: top 1.4s cubic-bezier(.49,.22,.52,1);
+
+}
+ 
+#nav {
+	/* on fixe le menu en haut */
+	position: fixed;
+	top: 0; left: 0; right: 0;
+	padding: 1em 0;
+	margin: 0;
+	/* on centre les liens */
+	text-align: center;
+	background: #000;
+}
+#nav li {
+	/* on aligne les éléments de liste */
+	display: inline;
+	margin:0;
+}
+#nav a {
+	/* on applique des marges aux liens */
+	display: inline-block;
+	margin: 0 3em;
+	color: #eee;
+	/* on applique une petite lueur */
+	text-shadow: 0 0 5px #fff;
+	/* on prévoit une petite transition (lueur) */
+	transition: all 1s;
+}
+/* slides */
+#slide1, #slide2, #slide3 {
+	/* height à adapter avec media queries */
+	height: 1000px;
+	padding-top:100px;
+	/* préparation des transitions */
+	transition: background-position 1.4s  cubic-bezier(.49,.22,.52,1.35);
+}
+/* attribution des images de fond */
+#slide1 { background:url(images/slide1-bg.jpg) center 0 no-repeat fixed; }
+#slide2 { background: url(images/slide2-bg.jpg) center 0 no-repeat fixed; }
+#slide3 { background: url(images/slide3-bg.jpg) center 0 no-repeat fixed; }
+ 
+/* Contenus des slides */
+.slide_inside {
+	width: 770px;
+	margin: 0 auto;
+	position: relative;
+	background-color: rgba(0, 0, 0, .6);
+	padding: 50px;
+}
+
+#slide1 .slide_inside {
+	text-align: center;
+	background-color: red;
+}
+#slide2 .slide_inside p {
+	width: 500px;
+	text-align: justify;
+	background-color: blue;
+}
+#slide3 .slide_inside {
+	margin-top: 50px;
+	background-color: green;
+}
+/* positionnement des personnages animés */
+#trooper, #clone {
+	position: absolute;
+	left:-180px; top: 300px;
+	/* on tourne légèrement les images */
+	transform: rotate(10deg);
+	/* et on prévoit une transition */
+	transition: all 1.4s cubic-bezier(.49,.22,.52,1);
+}
+/* positionnement différé d'un des 2 personnages */
+#clone {
+	left: -280px;
+	top: 400px;
+}
+/* décalage du conteneur vers le haut */
+#s2:target ~ #wrap {
+	top:-1000px;
+}
+ 
+/* décalage des fonds de chaque slide */
+#s2:target ~ #wrap #slide1 { background-position: 50% 36%; }
+#s2:target ~ #wrap #slide2 { background-position: 50% 0%; }
+#s2:target ~ #wrap #slide3 { background-position: 50% -30%; }
+ 
+/* mouvements d'un des personnages */
+#s2:target ~ #wrap #trooper { 
+	left: -180px;
+	top: -100px;
+	transform: rotate(-7deg);
+}
+ 
+/* mouvements de l'autre personnage */
+#s2:target ~ #wrap #clone {
+	left: -350px;
+	top: 50px;
+	transform: rotate(0deg);
+}
+ 
+/* juste pour la déco (lueur sur le lien cliqué) */
+#s2:target ~ #wrap #nav li:first-child + li a {
+	text-shadow: 0 0 5px #eca603, 0 0 5px #eca603, 0 0 5px #eca603, 0 0 5px #eca603;
+}/* vers Slide 1 */
+#s1:target ~ #wrap { top:0px; }
+#s1:target ~ #wrap #nav li:first-child a { text-shadow: 0 0 5px #eca603, 0 0 5px #eca603, 0 0 5px #eca603, 0 0 5px #eca603; }
+#s1:target ~ #wrap #slide1 { background-position: 50% 0%; }
+#s1:target ~ #wrap #slide2 { background-position: 50% -35%; }
+#s1:target ~ #wrap #slide3 { background-position: 50% -60%; }
+#s1:target ~ #wrap #trooper { left: -180px; top: 300px; transform: rotate(10deg); }
+#s1:target ~ #wrap #clone { left: -280px; top: 300px; transform: rotate(10deg); }
+ 
+/* vers Slide 3 */
+#s3:target ~ #wrap { top:-2150px; }
+#s3:target ~ #wrap #nav li:last-child a { text-shadow: 0 0 5px #eca603, 0 0 5px #eca603, 0 0 5px #eca603, 0 0 5px #eca603; }
+#s3:target ~ #wrap #slide1 { background-position: 50% 60%; }
+#s3:target ~ #wrap #slide2 { background-position: 50% 35%; }
+#s3:target ~ #wrap #slide3 { background-position: 50% 0%; }
+#s3:target ~ #wrap #trooper { left:-1500px;top:-1000px; transform: rotate(-15deg); }
+#s3:target ~ #wrap #clone { left:-1000px;top: -800px; transform: rotate(-15deg); }
