@@ -14,6 +14,7 @@
 						<li><a href="experiences.php">Expériences</a></li>
 						<li><a href="loisirs.php">Loisirs</a></li>
 						<li><a href="competences.php">Compétences</a></li>
+						<li><a href="titres.php">Titres</a></li>
 						<li><a href="index.php?deconnect=oui">Deconnexion</a></li>
 
 					</ul>

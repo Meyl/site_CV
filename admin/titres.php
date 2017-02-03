@@ -28,22 +28,23 @@ session_start();//a mettre dans toute les pas session et identification
   ?>
 <?php //Isertion d'une competences 
 
-if (isset($_POST['competence'])){
-	if($_POST['competence']!=''){
-		$competence = addslashes($_POST['competence']);
+if (isset($_POST['titre_cv'])){
+	if($_POST['titre_cv']!='' && $_POST['accroche']!='' ){
+		$titre_cv = addslashes($_POST['titre_cv']);
+		$accroche = addslashes($_POST['accroche']);
 
-		$pdo->exec("INSERT INTO t_competences VALUES (NULL, '$competence') ");
+		$pdo->exec("INSERT INTO t_titre_cv VALUES (NULL, '$titre_cv','$accroche') ");
 
-		header("location: ../admin/competences.php");
+		header("location: ../admin/titres.php");
 		exit();
 	}
 }
 //Suppression d'une competence
-if(isset($_GET['id_competence'])){
-	$efface = $_GET['id_competence'];
-	$sql = "DELETE FROM t_competences WHERE id_competence = '$efface' ";
+if(isset($_GET['id_titre'])){
+	$efface = $_GET['id_titre'];
+	$sql = "DELETE FROM t_titre_cv WHERE id_titre = '$efface' ";
 	$pdo -> query($sql);
-header('location: ../admin/competences.php');
+header('location: ../admin/titres.php');
 }
 ?>
 <!DOCTYPE html>
@@ -59,26 +60,28 @@ header('location: ../admin/competences.php');
 		 	<?php include("admin_nav.php");  ?>
 		 	</header>
 			<div class="formulaire">
-				<h2 class="titre">Compétences</h2>
+				<h2 class="titre">Titre</h2>
 				<?php //Affiche un seul enregistrement
-				$sql= $pdo->prepare("SELECT * FROM t_competences");
+				$sql= $pdo->prepare("SELECT * FROM t_titre_cv");
 				$sql->execute();
-				$nbr_competences = $sql->rowCount();
+				$nbr_titres = $sql->rowCount();
 				?>
-				<p>il y a <?php echo $nbr_competences; ?> compétences </p>
-				<form action="competences.php" method="post" >
+				<p>il y a <?php echo $nbr_titres; ?> titres cv </p>
+				<form action="titres.php" method="post" >
 					<fieldset>
-						<label>Compétences</label>
-						<input type="text" name="competence">
+						<label>Titre CV</label>
+						<input type="text" name="titre_cv">
+						<label>accroche</label>
+						<input type="text" name="accroche">
 						<label></label>
-						<input type="submit" value="Insérer mes compétences">
+						<input type="submit" value="Insérer mes titres">
 
 					</fieldset>
 				</form>
 				<?php while($ligne=$sql ->fetch()){ 
-					echo $ligne['competence'].' 
-					<a href="modif_c.php?id_competence='. $ligne['id_competence'].'">Modifier</a>
-					<a href="competences.php?id_competence='. $ligne['id_competence'].'">Supprimer</a> <br>';
+					echo $ligne['titre_cv'].' 
+					<a href="modif_t.php?id_titre='. $ligne['id_titre'].'">Modifier</a>
+					<a href="titres.php?id_titre='. $ligne['id_titre'].'">Supprimer</a> <br>';
 				}
 					
 				 ?>

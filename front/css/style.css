@@ -1,34 +1,4 @@
-/*header{
-	background:url('../img/vue.jpg') no-repeat;
+#lang{
+	width:96px;
+	height:124px;
 }
-*/
-#contact{
-
-	background:none;
-}
-
-#portofiolio{
- 
- display: none;
-
-}
-#about div.col-md-4.col-md-offset-1 p{
-	text-align: center;
-}
-#about div.col-md-4.col-md-offset-1{
-	border-radius: 8px;
-	background-color: #4785b8;
-}
-#about div.col-md-4.col-md-offset-2{
-	border-radius: 8px;
-	background-color: #4785b8;
-
-	
-}
-
-.parallax-window {
-    min-height: 400px;
-    background: transparent;
-}
-
-
