@@ -57,6 +57,7 @@
 
     <!-- Custom CSS -->
     <link href="front/css/stylish-portfolio.css" rel="stylesheet">
+    <link href="front/css/style.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="front/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -129,14 +130,14 @@
     <section id="services" class="services bg-primary">
         <div class="container">
             <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Competences</h2>
+                <div class="col-lg-8 col-lg-offset-1">
+                    <h2 id="titrecomp">Competences</h2>
                     <hr class="small">
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <img src="front/img/html.png"; class="lang">
+                                <img src="front/img/html5.png" class="imgcomp" ;>
                             </span>
                                 <h4>
                                     <strong>Html</strong>
@@ -147,7 +148,7 @@
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <img src="front/img/css.png"; class="lang">
+                                <img src="front/img/css3.png" class="imgcomp" ;>
                             </span>
                                 <h4>
                                     <strong>Css</strong>
@@ -158,7 +159,7 @@
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <img src="front/img/js.png"; class="lang">
+                                <img src="front/img/js.png" class="imgcomp";>
                             </span>
                                 <h4>
                                     <strong>JavaScript</strong>
@@ -169,7 +170,7 @@
                         <div class="">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <img src="front/img/php.png"; class="lang">
+                                <img src="front/img/php5.png" class="imgcomp";>
                             </span>
                                 <h4>
                                     <strong>Php</strong>
