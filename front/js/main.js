@@ -1,0 +1,1 @@
+$('.parallax-window').parallax({imageSrc: 'front/img/vue.jpg'});

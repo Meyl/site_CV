@@ -1,6 +1,11 @@
-.imgcomp{
+#prenom{
+	text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+	color:rgba(0,0,60,1);
+}
+.text-vertical-center{
 
 }
-#titrecomp{
-	margin-top: 400px;
+#sous-titre{
+	color:#fff;
+	text-shadow:;
 }

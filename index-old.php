@@ -49,24 +49,24 @@
     <!--  Ajout du parallax -->
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="front/js/parallax.js"></script>
-    <script src="front/js/main.js"></script>
+    <!-- <script src="../front/js/parallax.js"></script> -->
+    <script src="../front/js/main.js"></script>
 
 
     <!-- Bootstrap Core CSS -->
-    <link href="front/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../front/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link href="front/css/freelancer.min.css" rel="stylesheet">
-    <link href="front/css/freelancer.css" rel="stylesheet">
+    <link href="../front/css/freelancer.min.css" rel="stylesheet">
+    <link href="../front/css/freelancer.css" rel="stylesheet">
   
 
     <!-- Custom Fonts -->
-    <link href="front/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../front/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
-    <link href="front/css/style.css" rel="stylesheet">
+    
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -643,6 +643,9 @@
 
     <!-- jQuery -->
     <script src="front/vendor/jquery/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="front/js/parallax.js-1.4.2/parallax.js"></script>
+   
 
     <!-- Bootstrap Core JavaScript -->
     <script src="front/vendor/bootstrap/js/bootstrap.min.js"></script>

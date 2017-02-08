@@ -51,6 +51,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="../front/js/parallax.js"></script>
     <script src="../front/js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/path/to/parallax.js"></script>
 
     <!-- Bootstrap Core CSS -->
     <link href="front/css/bootstrap.min.css" rel="stylesheet">
@@ -100,16 +102,18 @@
             </li>
         </ul>
     </nav>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="front/img/bg.jpg">
 
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
-            <h1><?php echo $utilisateur['prenom'].' '.$utilisateur['nom'];  ?></h1>
-            <h3><?= $titre[0]['titre_cv']; ?></h3>
+            <h1 id="prenom"><?php echo $utilisateur['prenom'].' '.$utilisateur['nom'];  ?></h1>
+            <h3 id="sous-titre"><?= $titre[0]['titre_cv']; ?></h3>
             <br>
             <a href="#about" class="btn btn-dark btn-lg">En savoir plus</a>
         </div>
     </header>
+    </div>
 
     <!-- About -->
     <section id="about" class="about">
