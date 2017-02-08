@@ -51,8 +51,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="../front/js/parallax.js"></script>
     <script src="../front/js/main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="/path/to/parallax.js"></script>
 
     <!-- Bootstrap Core CSS -->
     <link href="front/css/bootstrap.min.css" rel="stylesheet">
@@ -102,18 +100,16 @@
             </li>
         </ul>
     </nav>
-    <div class="parallax-window" data-parallax="scroll" data-image-src="front/img/bg.jpg">
 
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
             <h1 id="prenom"><?php echo $utilisateur['prenom'].' '.$utilisateur['nom'];  ?></h1>
-            <h3 id="sous-titre"><?= $titre[0]['titre_cv']; ?></h3>
+            <h3 id="sous-titrel"><?= $titre[0]['titre_cv']; ?></h3>
             <br>
             <a href="#about" class="btn btn-dark btn-lg">En savoir plus</a>
         </div>
     </header>
-    </div>
 
     <!-- About -->
     <section id="about" class="about">
@@ -135,7 +131,7 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-8 col-lg-offset-1">
-                    <h2 id="titrecomp">Competences</h2>
+                    <h2>Competences</h2>
                     <hr class="small">
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
@@ -144,7 +140,7 @@
                                 <img src="front/img/html5.png" class="imgcomp" ;>
                             </span>
                                 <h4>
-                                    <strong>Html</strong>
+                                    <strong class="nom-logo">bHtml</strong>
                                 </h4>
                                 
                             </div>
@@ -155,7 +151,7 @@
                                 <img src="front/img/css3.png" class="imgcomp" ;>
                             </span>
                                 <h4>
-                                    <strong>Css</strong>
+                                    <strong class="nom-logo">Css</strong>
                                 </h4>
                                 
                             </div>
@@ -166,7 +162,7 @@
                                 <img src="front/img/js.png" class="imgcomp";>
                             </span>
                                 <h4>
-                                    <strong>JavaScript</strong>
+                                    <strong class="nom-logo">JavaScript</strong>
                                 </h4>
                             
                             </div>
@@ -177,7 +173,7 @@
                                 <img src="front/img/php5.png" class="imgcomp";>
                             </span>
                                 <h4>
-                                    <strong>Php</strong>
+                                    <strong class="nom-logo">Php</strong>
                                 </h4>
                               
                             </div>

@@ -1,1 +1,3 @@
-$('.parallax-window').parallax({imageSrc: 'front/img/vue.jpg'});
+$('.parallax-window').parallax({imageSrc: 'front/img/bg.jpg'});
+
+
