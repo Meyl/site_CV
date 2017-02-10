@@ -81,7 +81,7 @@
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top" onclick=$("#menu-close").click();>Start Bootstrap</a>
+                <a href="#top" onclick=$("#menu-close").click();>Mon CV</a>
             </li>
             <li>
                 <a href="#top" onclick=$("#menu-close").click();>Acceuil</a>
@@ -128,54 +128,105 @@
     <!-- Services -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
     <section id="services" class="services bg-primary">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-8 col-lg-offset-1">
-                    <h2>Competences</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <img src="front/img/html5.png" class="imgcomp" ;>
-                            </span>
-                                <h4>
-                                    <strong class="nom-logo">bHtml</strong>
-                                </h4>
-                                
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <img src="front/img/css3.png" class="imgcomp" ;>
-                            </span>
-                                <h4>
-                                    <strong class="nom-logo">Css</strong>
-                                </h4>
-                                
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <img src="front/img/js.png" class="imgcomp";>
-                            </span>
-                                <h4>
-                                    <strong class="nom-logo">JavaScript</strong>
-                                </h4>
-                            
-                            </div>
-                        </div>
-                        <div class="">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <img src="front/img/php5.png" class="imgcomp";>
-                            </span>
-                                <h4>
-                                    <strong class="nom-logo">Php</strong>
-                                </h4>
-                              
+        <div class="container fond">
+        <h2>Competences</h2>
+            <div class="skills">
+              <div class="level-competences">
+                <ul class="list">
+                  <li class="items"><img src="http://pamelacarric.com/assets/icons/logo-html5.png" width="70" height="70" alt="Le logo du langage de programmation HTML5" class="img-skills">
+                  </li>
+                  <li class="items bar">
+                    <div class="level html5"><span></span>
+                    </div>
+                    <p class="description">HTML5 - Web Semantic</p>
+                  </li>
+                </ul>
+                <ul class="list">
+                  <li class="items">
+                    <img src="http://pamelacarric.com/assets/icons/logo-css3.png" width="70" height="70" alt="Le logo du langage de programmation CSS3" class="img-skills">
+                  </li>
+                  <li class="items bar">
+                    <div class="level css3"><span></span>
+                    </div>
+                    <p class="description">CSS3 - LESS - Responsive Design - Animation CSS</p>
+                  </li>
+                </ul>
+                <ul class="list">
+                  <li class="items">
+                    <img src="http://pamelacarric.com/assets/icons/logo-javascript.png" width="70" height="70" alt="Le logo du langage de programmation Javascript" class="img-skills">
+                  </li>
+                  <li class="items bar">
+                    <div class="level js"><span></span>
+                    </div>
+                    <p class="description">Javascript - NavBar - Animation - Slider</p>
+                  </li>
+                </ul>
+                <ul class="list">
+                  <li class="items">
+                    <img src="http://pamelacarric.com/assets/icons/logo-jquery.png" width="70" height="70" alt="Le logo de la bibliotheque jQuery" class="img-skills">
+                  </li>
+                  <li class="items bar">
+                    <div class="level jq"><span></span>
+                    </div>
+                    <p class="description">jQuery - DOM Manipulation - Animations</p>
+                  </li>
+                </ul>
+                <ul class="list">
+                  <li class="items">
+                    <img src="http://pamelacarric.com/assets/icons/logo-wordpress.png" width="70" height="70" alt="Le logos du celebre CMS Wordpress" class="img-skills">
+                  </li>
+                  <li class="items bar">
+                    <div class="level wp"><span></span>
+                    </div>
+                    <p class="description">Wordpress - Theme Personnalisé - Création de Blog</p>
+                  </li>
+                </ul>
+                <ul class="list">
+                  <li class="items">
+                    <img src="http://pamelacarric.com/assets/icons/logo-prestashop.png" width="70" height="70" alt="Le logo du celebre CMS de creation de E-Boutique Prestashop" class="img-skills">
+                  </li>
+                  <li class="items bar">
+                    <div class="level psp"><span></span>
+                    </div>
+                    <p class="description">Prestashop - Original Design - Création de E-Boutique</p>
+                  </li>
+                </ul>
+                <ul class="list">
+                  <li class="items">
+                    <img src="http://pamelacarric.com/assets/icons/logo-codeIgniter.png" width="70" height="70" alt="Le logo du framework php CodeIgniter" class="img-skills">
+                  </li>
+                  <li class="items bar">
+                    <div class="level ci"><span></span>
+                    </div>
+                    <p class="description">CodeIgniter - Création de Site dynamique</p>
+                  </li>
+                </ul>
+                <ul class="list">
+                  <li class="items">
+                    <img src="http://pamelacarric.com/assets/icons/logo-photoshop.png" width="70" height="70" alt="Le logo du logiciel de retouche d image Photoshop" class="img-skills">
+                  </li>
+                  <li class="items bar">
+                    <div class="level ps"><span></span>
+                    </div>
+                    <p class="description">Photoshop - Maquettes - Web Design - Montage Photo</p>
+                  </li>
+                </ul>
+                <ul class="list">
+                  <li class="items">
+                    <img src="http://pamelacarric.com/assets/icons/logo-illustrator.png" width="70" height="70" alt="Le logo du logiciel de vectorisation Illustrator" class="img-skills">
+                  </li>
+                  <li class="items bar">
+                    <div class="level ai"><span></span>
+                    </div>
+                    <p class="description">Illustrator - conception de logo</p>
+                  </li>
+                </ul>
+              </div>
+              <!-- End Of Level-Competences -->
+            </div>
+            <!-- End Of Skills -->
+
+                            </div>  
                             </div>
                         </div>
                     </div>
