@@ -48,9 +48,7 @@
 
      <!--  Ajout du parallax -->
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="../front/js/parallax.js"></script>
-    <script src="../front/js/main.js"></script>
+  
 
     <!-- Bootstrap Core CSS -->
     <link href="front/css/bootstrap.min.css" rel="stylesheet">
@@ -105,146 +103,104 @@
     <header id="top" class="header">
         <div class="text-vertical-center">
             <h1 id="prenom"><?php echo $utilisateur['prenom'].' '.$utilisateur['nom'];  ?></h1>
-            <h3 id="sous-titrel"><?= $titre[0]['titre_cv']; ?></h3>
+            <h3 id="soustitre"><?= $titre[0]['titre_cv']; ?></h3>
             <br>
             <a href="#about" class="btn btn-dark btn-lg">En savoir plus</a>
         </div>
     </header>
 
-    <!-- About -->
+    <!-- Bienvenue -->
     <section id="about" class="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-                    <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+                <div id="Bienvenue" class="col-lg-12 text-center">
+                    <h2>Bienvenue sur mon site CV</h2>
+                     <p class="lead">Pour telechargez mon CV en format PDF cliquer ici:</p>
+                    <div id="downicon">
+                    <a href="docs/CV Yannis CHAREF V2.pdf" id="down" target="_blank">Téléchargez mon CV <img src="front/img/Downloads-icon.png" ></a></div>
                 </div>
             </div>
             <!-- /.row -->
         </div>
-        <!-- /.container -->
-    </section>
 
-    <!-- Services -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="services" class="services bg-primary">
-        <div class="container fond">
-        <h2>Competences</h2>
-            <div class="skills">
-              <div class="level-competences">
-                <ul class="list">
-                  <li class="items"><img src="http://pamelacarric.com/assets/icons/logo-html5.png" width="70" height="70" alt="Le logo du langage de programmation HTML5" class="img-skills">
-                  </li>
-                  <li class="items bar">
-                    <div class="level html5"><span></span>
-                    </div>
-                    <p class="description">HTML5 - Web Semantic</p>
-                  </li>
-                </ul>
-                <ul class="list">
-                  <li class="items">
-                    <img src="http://pamelacarric.com/assets/icons/logo-css3.png" width="70" height="70" alt="Le logo du langage de programmation CSS3" class="img-skills">
-                  </li>
-                  <li class="items bar">
-                    <div class="level css3"><span></span>
-                    </div>
-                    <p class="description">CSS3 - LESS - Responsive Design - Animation CSS</p>
-                  </li>
-                </ul>
-                <ul class="list">
-                  <li class="items">
-                    <img src="http://pamelacarric.com/assets/icons/logo-javascript.png" width="70" height="70" alt="Le logo du langage de programmation Javascript" class="img-skills">
-                  </li>
-                  <li class="items bar">
-                    <div class="level js"><span></span>
-                    </div>
-                    <p class="description">Javascript - NavBar - Animation - Slider</p>
-                  </li>
-                </ul>
-                <ul class="list">
-                  <li class="items">
-                    <img src="http://pamelacarric.com/assets/icons/logo-jquery.png" width="70" height="70" alt="Le logo de la bibliotheque jQuery" class="img-skills">
-                  </li>
-                  <li class="items bar">
-                    <div class="level jq"><span></span>
-                    </div>
-                    <p class="description">jQuery - DOM Manipulation - Animations</p>
-                  </li>
-                </ul>
-                <ul class="list">
-                  <li class="items">
-                    <img src="http://pamelacarric.com/assets/icons/logo-wordpress.png" width="70" height="70" alt="Le logos du celebre CMS Wordpress" class="img-skills">
-                  </li>
-                  <li class="items bar">
-                    <div class="level wp"><span></span>
-                    </div>
-                    <p class="description">Wordpress - Theme Personnalisé - Création de Blog</p>
-                  </li>
-                </ul>
-                <ul class="list">
-                  <li class="items">
-                    <img src="http://pamelacarric.com/assets/icons/logo-prestashop.png" width="70" height="70" alt="Le logo du celebre CMS de creation de E-Boutique Prestashop" class="img-skills">
-                  </li>
-                  <li class="items bar">
-                    <div class="level psp"><span></span>
-                    </div>
-                    <p class="description">Prestashop - Original Design - Création de E-Boutique</p>
-                  </li>
-                </ul>
-                <ul class="list">
-                  <li class="items">
-                    <img src="http://pamelacarric.com/assets/icons/logo-codeIgniter.png" width="70" height="70" alt="Le logo du framework php CodeIgniter" class="img-skills">
-                  </li>
-                  <li class="items bar">
-                    <div class="level ci"><span></span>
-                    </div>
-                    <p class="description">CodeIgniter - Création de Site dynamique</p>
-                  </li>
-                </ul>
-                <ul class="list">
-                  <li class="items">
-                    <img src="http://pamelacarric.com/assets/icons/logo-photoshop.png" width="70" height="70" alt="Le logo du logiciel de retouche d image Photoshop" class="img-skills">
-                  </li>
-                  <li class="items bar">
-                    <div class="level ps"><span></span>
-                    </div>
-                    <p class="description">Photoshop - Maquettes - Web Design - Montage Photo</p>
-                  </li>
-                </ul>
-                <ul class="list">
-                  <li class="items">
-                    <img src="http://pamelacarric.com/assets/icons/logo-illustrator.png" width="70" height="70" alt="Le logo du logiciel de vectorisation Illustrator" class="img-skills">
-                  </li>
-                  <li class="items bar">
-                    <div class="level ai"><span></span>
-                    </div>
-                    <p class="description">Illustrator - conception de logo</p>
-                  </li>
-                </ul>
+        <!-- /.container -->
+  <section>
+  <!--<h2 class="text-center">Scroll down the page a bit</h2><br><br> -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2 col-lg-2"></div>
+             <div class="col-md-8 col-lg-8">
+               
+        <div class="barWrapper">
+            <span class="progressText"><B>HTML5</B></span>
+            <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" >   
+                <span  class="popOver" data-toggle="tooltip" data-placement="top" title="85%"> </span>     
+        </div>
+        </div>
+
+        <div class="barWrapper">
+         <span class="progressText"><B>CSS3</B></span>
+        <div class="progress ">
+          <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="10" aria-valuemax="100" style="">
+             <span  class="popOver" data-toggle="tooltip" data-placement="top" title="75%"> </span>  
+          </div>
+          
+        </div>
+        </div>
+
+        <div class="barWrapper">
+             <span class="progressText"><B>BOOTSTRAP</B></span>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                 <span  class="popOver" data-toggle="tooltip" data-placement="top" title="65%"> </span>  
               </div>
-              <!-- End Of Level-Competences -->
             </div>
-            <!-- End Of Skills -->
-
-                            </div>  
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.row (nested) -->
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
         </div>
-        <!-- /.container -->
-    </section>
+        <div class="barWrapper">
+                 <span class="progressText"><B>JQUERY</B></span>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                    <span  class="popOver" data-toggle="tooltip" data-placement="top" title="55%"> </span>  
+                </div>
+            </div>
+        </div>
+        <div class="barWrapper">
+            <span class="progressText"><B>MYSQL</B></span>
+            <div class="progress">
+             <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+              <span  class="popOver" data-toggle="tooltip" data-placement="top" title="70%"> </span>  
+            </div>
+            </div>
+        </div>
+          <div class="barWrapper">
+            <span class="progressText"><B>PHP</B></span>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  <span  class="popOver" data-toggle="tooltip" data-placement="top" title="75%"> </span> 
+                </div>
+            </div>
+        </div>
 
+        </div>
+             <div class="col-md-2 col-lg-2"></div>
+            </div>
+        </div>
+  </section>
+
+
+    <section>
     <!-- Callout -->
     <aside class="callout">
         <div class="text-vertical-center">
             <h1>Experiences Professionnel</h1>
         </div>
     </aside>
+          <section id="ExperiencesPro">
+      <p>
+          BRUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUH!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+      </p>
+      </section>
 
     <!-- Portfolio -->
     <section id="portfolio" class="portfolio">
@@ -346,14 +302,15 @@
             </div>
         </div>
         <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+
     </footer>
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
+  
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="front/js/parallax.js"></script>
+    <script src="front/js/main.js"></script>
+    <script type="text/javascript" src="front2/js/main.js"></script>
     <!-- Custom Theme JavaScript -->
     <script>
     // Closes the sidebar menu

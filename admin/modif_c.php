@@ -4,7 +4,7 @@
 <?php 
 //mise a jour de la compétence
 if(isset($_POST['competence'])){
-	if ($_POST['competence']!='') { // ! et = '' veut n'est pas vide
+	if ($_POST['competence']!='') { // ! et = '' veut dire n'est pas vide
 		$competence = addslashes($_POST['competence']); //addslashes permet d'echapper les contenus  pour eviter le piratage 
 		$id_competence = $_POST['id_competence'];
 
@@ -34,17 +34,9 @@ $ligne_competence = $sql->fetch();
 	</head>
 		<body>
 		 	<header>
-				<h1>Yannis Admin</h1>
-				
-				<nav class="liste">
-					<ul>
-						<li><a href="index.php">Accueil</a></li>
-						<li><a href="utilisateur.php">Utilisateur</a></li>
-						<li><a href="experiences.php">Experiences</a></li>
-						<li><a href="loisir.php">Loisir</a></li>
-						<li><a href="competences.php">competences</a></li>
-					</ul>
-				</nav>
+		 		<header>
+				<?php include("admin_nav.php");  ?>
+			    </header>
 			</header>
 			<h2> Modif Competences</h2>
 			<div>

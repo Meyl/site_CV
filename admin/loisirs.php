@@ -78,8 +78,8 @@ header('location: ../admin/loisirs.php');
 				</form>
 				<?php while($ligne=$sql ->fetch()){ 
 					echo $ligne['loisir'].' 
-					<a href="modif_c.php?id_loisir='. $ligne['id_loisir'].'">Modifier</a>
-					<a href="competences.php?id_loisir='. $ligne['id_loisir'].'">Supprimer</a><br>';
+					<a href="modif_l.php?id_loisir='. $ligne['id_loisir'].'">Modifier</a> 
+					<a href="loisirs.php?id_loisir='. $ligne['id_loisir'].'">Supprimer</a><br>';
 				}
 					 '</div>';
 				 ?>

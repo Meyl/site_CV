@@ -40,7 +40,7 @@ $ligne_experiences = $sql->fetch();
 					<fieldset>
 						<label>Titre experience</label>
 						<input type="text" name="experiences" value="<?php echo $ligne_experiences['titre_e'];  ?>">
-						<input hidden name="id_experiences" value="<?php echo $ligne_experiences['experiences'];  ?>">
+						<input hidden name="id_experiences" value="<?php echo $ligne_experiences['experience'];  ?>">
 						<label>sous-titre experiences</label>
 						<input type="text" name="sous_titre_e" value="<?php echo $ligne_experiences['sous_titre_e'];  ?>">
 						<label>Date</label>

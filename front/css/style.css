@@ -10,18 +10,23 @@
              -2px 7px 45px rgba(0,0,0, 0.4);
 	color:#6699cc;
 }
-.text-vertical-center{
-
+#ExperiencesPro{
+    width: 100%;
+    height:450px;
+    background-color:red;
 }
-#sous-titre{
-	color:#fff;
-	text-shadow:;
+#soustitre{
+    text-shadow: -1px 0 0 rgba(0, 0, 0, 0.8), 
+             1px 0 0 rgba(0, 0, 0, 0.8),
+             0 -1px 0 rgba(0, 0, 0, 0.8),
+             0 1px 0 rgba(0, 0, 0, 0.8);
+    color:#333333;
 }
 .imgcomp{
-	height: 135px;
+	height:135px;
 }
 .nom-logo{
-	margin-left: 40px;
+	margin-left:40px;
 	margin-top:50px; 
 
 }
@@ -32,247 +37,32 @@
 }	
 #services{
 	/*padding: 400px;*/
-	background-color:#6699cc; 	
+	background-color:#6699cc;  	
 }
+#downicon{
+    border-color:#6699cc;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,900|Oswald:400,300,700|Poiret+One|Raleway:400,300,200,500,600,700,800,900);
 
 .items img{
-    margin-right: 1000px;
+    margin-right:1000px;
 }
 .fond{
 	background-color: #fff;
-	border-radius: 19px;
+	border-radius:50px;
+	width:800px;
+	border-color: black; 
 }
-
-.fond > h2{
-
-	color:black;
+.titre-lang{
+	color: black;
+	margin-left:0px;
+	margin-bottom:-15px;
+	font-family:  
 }
-/*html {
-  font-family: @font-base;
-  width: 1080px;
-  margin: 0 auto;
-}*/
-
-.level-competences {
-    width: @default-container-width;
-    height: auto;
-    .flex(@direction:column, @box:border-box);
-    .overflow();
-    margin-left: 1rem;
-    text-align: center;
-
-    .list {
-        display: table;
-        width: 100%;
-
-        .items {
-            display: table-cell;
-
-            &:first-child {
-                width: 10%;
-                max-width: 35px;
-            }
-
-            &:last-child {
-                width: 90%;
-                vertical-align: middle;
-            }
-        }
-
-        .items.bar {
-            margin-left: 30px;
-            margin-top: 20px;
-        }
-    }
-}
-
-.level {
-    width: 80%;
-    height: 10px;
-    position: relative;
-    background-color: base-bg-barProgress;
-    border-radius: 5px;
-    margin-bottom: 5px;
-}
-
-.description {
-    font-family: font-base;
-    font-size: font-size-skinny;
-    font-weight: 300;
-    text-align: left;
-    margin-bottom: 1rem;
-}
-
-.level.html5 span {
-    animation-delay: 750ms;
-    animation-duration: 1000ms;
-    animation-fill-mode: both;
-    animation-timing-function: ease;
-    animation-name: fill-85;
-    width: 100%;
-    height: 20px;
-    background-color:#FE6F5E ;
-    position: absolute;
-    opacity: 1;
-    left: 0;
-    top: 0;
-    border-radius: 5px;
-    overflow: hidden;
-    text-indent: -290486px;
-    z-index: 100;
-}
-
-.level.css3 span {
-    animation-delay: 750ms;
-    animation-duration: 1000ms;
-    animation-fill-mode: both;
-    animation-timing-function: ease;
-    animation-name: fill-90;
-    width: 100%;
-    height: 20px;
-    background-color:#6090BF;
-    position: absolute;
-    opacity: 1;
-    left: 0;
-    top: 0;
-    border-radius: 5px;
-    overflow: hidden;
-    text-indent: -290486px;
-    z-index: 100;
-}
-
-.level.js span {
-    animation-delay: 750ms;
-    animation-duration: 1000ms;
-    animation-fill-mode: both;
-    animation-timing-function: ease;
-    animation-name: fill-60;
-    width: 100%;
-    height: 20px;
-    background-color:#F9D054 ;
-    position: absolute;
-    opacity: 1;
-    left: 0;
-    top: 0;
-    border-radius: 5px;
-    overflow: hidden;
-    text-indent: -290486px;
-    z-index: 100;
-}
-
-.level.jq span {
-    animation-delay: 750ms;
-    animation-duration: 1000ms;
-    animation-fill-mode: both;
-    animation-timing-function: ease;
-    animation-name: fill-30;
-    width: 100%;
-    height: 20px;
-    background-color:#445761 ;
-    position: absolute;
-    opacity: 1;
-    left: 0;
-    top: 0;
-    border-radius: 5px;
-    overflow: hidden;
-    text-indent: -290486px;
-    z-index: 100;
-}
-
-.level.wp span {
-    animation-delay: 750ms;
-    animation-duration: 1000ms;
-    animation-fill-mode: both;
-    animation-timing-function: ease;
-    animation-name: fill-60;
-    width: 100%;
-    height: 20px;
-    background-color:#373E41;
-    position: absolute;
-    opacity: 1;
-    left: 0;
-    top: 0;
-    border-radius: 5px;
-    overflow: hidden;
-    text-indent: -290486px;
-    z-index: 100;
-}
-
-.level.psp span {
-    animation-delay: 750ms;
-    animation-duration: 1000ms;
-    animation-fill-mode: both;
-    animation-timing-function: ease;
-    animation-name: fill-60;
-    width: 100%;
-    height: 20px;
-    background-color:#66AA88;
-    position: absolute;
-    opacity: 1;
-    left: 0;
-    top: 0;
-    border-radius: 5px;
-    overflow: hidden;
-    text-indent: -290486px;
-    z-index: 100;
-}
-
-.level.ci span {
-    animation-delay: 750ms;
-    animation-duration: 1000ms;
-    animation-fill-mode: both;
-    animation-timing-function: ease;
-    animation-name: fill-40;
-    width: 100%;
-    height: 20px;
-    background-color:#FB935F;
-    position: absolute;
-    opacity: 1;
-    left: 0;
-    top: 0;
-    border-radius: 5px;
-    overflow: hidden;
-    text-indent: -290486px;
-    z-index: 100;
-}
-
-.level.ps span {
-    animation-delay: 750ms;
-    animation-duration: 1000ms;
-    animation-fill-mode: both;
-    animation-timing-function: ease;
-    animation-name: fill-95;
-    width: 100%;
-    height: 20px;
-    background-color:#2C4049;
-    position: absolute;
-    opacity: 1;
-    left: 0;
-    top: 0;
-    border-radius: 5px;
-    overflow: hidden;
-    text-indent: -290486px;
-    z-index: 100;
-}
-
-.level.ai span {
-    animation-delay: 750ms;
-    animation-duration: 1000ms;
-    animation-fill-mode: both;
-    animation-timing-function: ease;
-    animation-name: fill-80;
-    width: 100%;
-    height: 20px;
-    background-color:#A35233;
-    position: absolute;
-    opacity: 1;
-    left: 0;
-    top: 0;
-    border-radius: 5px;
-    overflow: hidden;
-    text-indent: -290486px;
-    z-index: 100;
+#formartion{
+	width: 100%;
+	background-color:#fff;
 }
 
 /*// ---------------------------------- Variables 

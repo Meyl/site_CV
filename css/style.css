@@ -5,7 +5,7 @@ body{
 	font-family: 'Arsenal', sans-serif;
 	/*font-family: 'Ubuntu', sans-serif;*/
 	/*font-family: 'Merriweather', serif;*/
-	background-color: #F5DEB3
+	background-color: #F5DEB3;
 }
 header{
 	
@@ -26,165 +26,11 @@ h1{
 	color:#FFFFFF;
 
 }
-#fiche{
-	width:100%;
-	height:60px;
-	background-color:black;
-}
-.liste ul li{
-	display: inline-block;
-	margin-right: 15px;
-
-}
-.liste ul li a {
-	text-decoration:none;
-	color: white;
-	display: block;
-	padding: 0 10px;
-}
-.liste ul li a:hover {
-	
-	background-color: #40E0D0;
+#down{
+	color:#F5DEB3;
 }
 
-
-
-.liste{
-
-	width: 950px;
-	margin:0 auto;
-	display: inline-block;
-	float: right;
-	line-height: 50px;
+#sous-titrel{
+	color: #336699;
+	text-shadow: 0 0 7px rgba(0,0,0, 0.5);
 }
-
-* {
- margin:0;
- padding:0;
- }
-
-li{
-
-
-}
-	
-.infos{
-	background-color:#40E0D0;
-	border:solid; 
-	border-radius: 15px 50px 30px;
-	width: 200px;
-	display: inline-block;
-	-moz-column-width: 12em;
-    -moz-columns: 12em;
-    -webkit-columns: 12em;
-    columns: 12em;
-}
-.icon{
-
-}
-img{
-	border-radius: 50px;
-	margin-top: 1px;
-}
-footer{
-	position:fixed;
-	bottom: 0;
-	height:70px;
-	width:100%;
-	background-color:#4169E1;
-	border-radius: 15px 15px 15px 15px;
-	margin-bottom: 0px;
-	margin-top: 20px;
-
-
-}
-i a:hover{
-	background-color:#40E0D0 ;
-}
-p{
-	text-align: center;
-}
-
-a{
-	float: center;
-}
-#form_a{
-	border:outset;
-	border-radius: 30px 15px ;
-	width:350px;
-	height:75px;
-	margin-left:533px;
-	padding: 50px;
-	background-color: rgba(255, 255, 255, 0.2);
-	
-
-
-}
-
-#date{
-	height:200px; 
-	width:500px;
-	background-color:#FFFFFF;
-	border:groove  ;
-	border-radius:10px;
-	border-color:#4169E1; 
-	margin: auto;
-	-webkit-box-shadow: 5px 5px 5px 5px #3150AB;
-	box-shadow: 5px 5px 5px 5px #3150AB;
-	
-
-
-}
-
-#salut{
-	
-
-}
-.txt{
-	text-align: center;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	margin-left: 50px;
-}
-.fa{
-	margin-left:30px;
-	padding-left: 7px;
-
-}
-#authentification{
-	margin-left:605px;
-
-
-}
-.formulaire{
-/*	height:100%; */
-	width:400px;
-	border-radius: 30px 14px 50px 11px;
-	background-color:#40E0D0;
-	border: solid;
-	margin-left: 500px
-
-}
-.titre{
-	text-align: center;
-}
-
-.parallax-window {
-    min-height: 400px;
-    background: transparent;
-}
-
-section.success {
-   
-    background-color: rgb(0, 0, 0);
-background-image: none;
-background-repeat: repeat;
-background-attachment: scroll;
-background-clip: border-box;
-background-origin: padding-box;
-background-position-x: 0%;
-background-position-y: 0%;
-background-size: auto auto;
-    color: white;
-
-    }
