@@ -39,26 +39,15 @@ if(isset($_POST['connexion'])){// on envoie le formulaire avec le name du bouton
 			<link rel="stylesheet" type="text/css" href="../framework/font-awesome-4.7.0/css/font-awesome.min.css">
 	</head>
 		<body>
-		 	<header> <h1 id="authentification"> Authentification </h1> </header>
-			
 
-			<div id="form_a">
-				<form action="authentification.php" method="POST">
-		        <fieldset>
-		            <legend>Je m'identifie</legend>
-		            <label for="email">Email</label>
-		            <input type="email" name="email" placeholder="Rentrez votre email" tabindex="1" size="35" aria-requierd="true"><br>
-
-		            <label for="mdp"> Mot de passe</label>
-		            <input type="password"  name="mdp" required tabindex="2" size="10" maxlength="50">
-
-		        </fieldset>
-
-		        	<input type="reset" tabindex="3" value="Effacer" >
-		        	<input name="connexion" type="submit" tabindex="4" value="Me connecter" >
-		        	<p><a href="#">J'ai oublier mon mot de passe</a></p>
-		    	</form>
-				</div>
+		<div class="login">
+			<h2>Bienvenue</h2>
+    		<form method="post" action="authentification.php">
+	    		<input type="text" name="email" placeholder="email" required="required" />
+	       	 	<input type="password" name="mdp" placeholder="Password" required="required" />
+	       		<button name="connexion" type="submit" class="btn btn-primary btn-block btn-large">Me connecter</button>
+    		</form>
+		</div>
 			<footer class="pied">
 			
 			</footer>

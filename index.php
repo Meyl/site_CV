@@ -196,10 +196,9 @@
             <h1>Experiences Professionnel</h1>
         </div>
     </aside>
-          <section id="ExperiencesPro">
-      <p>
-          BRUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUH!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-      </p>
+        <section id="ExperiencesPro">
+
+
       </section>
 
     <!-- Portfolio -->
@@ -263,12 +262,35 @@
     </aside>
 
     <!-- Map -->
-    <section id="contact" class="map">
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-        <br />
-        <small>
-            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-        </small>
+    <section id="contact">
+
+        <div id="formulaire">
+            <form>
+                <div id="part1" name="part1">
+                <label for="nom">Votre nom :</label>
+                <input type="text" name="nom" id="nom">
+                <br><br>
+                <label for="prenom">Votre prenom :</label>
+                <input type="text" name="prenom" id="prenom">
+                <br><br>
+                <label for=" objet">objet:</label>
+                <input type="text" name=" objet" id=" objet">
+                <br><br>
+                </div>
+                <div id="part2" name="part2">
+                <textarea name="messages" id="messages" type="messages" placeholder="Votre message"> </textarea>
+                <br><br>
+                </div>
+
+                
+
+                
+
+                <input type="submit" value="envoyer" name="envoyer" id="envoyer">
+
+            </form>
+        </div>
+      
     </section>
 
     <!-- Footer -->
