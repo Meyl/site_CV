@@ -38,26 +38,19 @@
 	</head>
 		<body>
 			<header id="main-header">
-			<?php include("admin_nav.php");  ?>
+				<?php include("admin_nav.php");  ?>
 			</header>
 			<section id="main-content">
-
-			<div id="date">
-			
-			<h2 id="salut">Hello Yannis</h2>
-		
-
-			<?php $date = date("d M Y"); $heure = date("H:i:s");?>
-			<p class="txt" style="display:inline-block;margin-top: 58px;margin-left: 35px;"><?php echo 'Nous sommes le '. $date . ' et il est ' . $heure; ?> </p>
-           
-			<img src="../img/HypeBart_IG.jpg" style="margin-bottom: 0px;float:left" alt="img">
-
-			</div>
-		
+				<div id="date">
+					<h2 id="salut">Hello Yannis</h2>
+					<?php $date = date("d M Y"); $heure = date("H:i:s");?>
+					<p class="txt" style="display:inline-block;margin-top: 58px;margin-left: 35px;"><?php echo 'Nous sommes le '. $date . ' et il est ' . $heure; ?>
+					 </p>
+					<img src="../img/HypeBart_IG.jpg" style="margin-bottom: 0px;float:left" alt="img">
+				</div>
 			</section>
-
 			<footer id="main-footer">
-			<?php include("admin_footer.php");  ?>	
+				<?php include("admin_footer.php");  ?>	
 			</footer>
-			</body>
+		</body>
 </html>

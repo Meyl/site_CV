@@ -102,7 +102,7 @@
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
-            <h1 id="prenom"><?php echo $utilisateur['prenom'].' '.$utilisateur['nom'];  ?></h1>
+            <h1 id="name"><?php echo $utilisateur['prenom'].' '.$utilisateur['nom'];  ?></h1>
             <h3 id="soustitre"><?= $titre[0]['titre_cv']; ?></h3>
             <br>
             <a href="#about" class="btn btn-dark btn-lg">En savoir plus</a>
@@ -120,10 +120,10 @@
                     <a href="docs/CV Yannis CHAREF V2.pdf" id="down" target="_blank">Téléchargez mon CV <img src="front/img/Downloads-icon.png" ></a></div>
                 </div>
             </div>
-            <!-- /.row -->
         </div>
+    </section>
 
-        <!-- /.container -->
+    <!-- Barres de Competences -->
   <section>
   <!--<h2 class="text-center">Scroll down the page a bit</h2><br><br> -->
         <div class="container">
@@ -131,74 +131,169 @@
             <div class="col-md-2 col-lg-2"></div>
              <div class="col-md-8 col-lg-8">
                
-        <div class="barWrapper">
-            <span class="progressText"><B>HTML5</B></span>
-            <div class="progress">
-          <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" >   
-                <span  class="popOver" data-toggle="tooltip" data-placement="top" title="85%"> </span>     
-        </div>
-        </div>
-
-        <div class="barWrapper">
-         <span class="progressText"><B>CSS3</B></span>
-        <div class="progress ">
-          <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="10" aria-valuemax="100" style="">
-             <span  class="popOver" data-toggle="tooltip" data-placement="top" title="75%"> </span>  
-          </div>
-          
-        </div>
-        </div>
-
-        <div class="barWrapper">
-             <span class="progressText"><B>BOOTSTRAP</B></span>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
-                 <span  class="popOver" data-toggle="tooltip" data-placement="top" title="65%"> </span>  
-              </div>
-            </div>
-        </div>
-        <div class="barWrapper">
-                 <span class="progressText"><B>JQUERY</B></span>
+            <div class="barWrapper">
+                <span class="progressText"><B>HTML5</B></span>
                 <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
-                    <span  class="popOver" data-toggle="tooltip" data-placement="top" title="55%"> </span>  
+                      <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" >   
+                        <span  class="popOver" data-toggle="tooltip" data-placement="top" title="85%"> </span>     
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="barWrapper">
-            <span class="progressText"><B>MYSQL</B></span>
-            <div class="progress">
-             <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-              <span  class="popOver" data-toggle="tooltip" data-placement="top" title="70%"> </span>  
-            </div>
-            </div>
-        </div>
-          <div class="barWrapper">
-            <span class="progressText"><B>PHP</B></span>
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                  <span  class="popOver" data-toggle="tooltip" data-placement="top" title="75%"> </span> 
-                </div>
-            </div>
-        </div>
 
+            <div class="barWrapper">
+             <span class="progressText"><B>CSS3</B></span>
+                <div class="progress ">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="10" aria-valuemax="100" style="">
+                     <span  class="popOver" data-toggle="tooltip" data-placement="top" title="75%"> </span>  
+                  </div>
+                  
+                </div>
+            </div>
+
+            <div class="barWrapper">
+                 <span class="progressText"><B>BOOTSTRAP</B></span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                     <span  class="popOver" data-toggle="tooltip" data-placement="top" title="65%"> </span>  
+                  </div>
+                </div>
+            </div>
+            <div class="barWrapper">
+                     <span class="progressText"><B>JQUERY</B></span>
+                    <div class="progress">
+                       <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                        <span  class="popOver" data-toggle="tooltip" data-placement="top" title="55%"> </span>  
+                      </div>
+                </div>
+            </div>
+
+            <div class="barWrapper">
+                <span class="progressText"><B>MYSQL</B></span>
+                <div class="progress">
+                     <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                      <span  class="popOver" data-toggle="tooltip" data-placement="top" title="70%"> </span>  
+                    </div>
+                </div>
+            </div>
+
+              <div class="barWrapper">
+                <span class="progressText"><B>PHP</B></span>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                      <span  class="popOver" data-toggle="tooltip" data-placement="top" title="75%"> </span> 
+                    </div>
+                </div>
+            </div>
         </div>
              <div class="col-md-2 col-lg-2"></div>
             </div>
         </div>
   </section>
 
+        <!-- Callout -->
+            <aside class="callout">
+                <div class="text-vertical-center">
+                    <h1>Experiences Professionnel</h1>
+                </div>
+            </aside>
 
-    <section>
-    <!-- Callout -->
-    <aside class="callout">
-        <div class="text-vertical-center">
-            <h1>Experiences Professionnel</h1>
-        </div>
-    </aside>
         <section id="ExperiencesPro">
 
-
+            <div class="container">
+                <div class="row">
+            <div class="col-lg-12">
+              <h3 class="text-center">Zigzag Timeline Layout (and Cats)</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                <ul class="timeline">
+                    <li>
+              <div class="timeline-image">
+                <img class="img-circle img-responsive" src="front/img/rst.jpg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>Ascogere</h4>
+                  <h4 class="subheading">restauration collective d'entreprise</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+              </div>
+              <div class="line"></div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="img-circle img-responsive" src="front/img/mp.jpg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>Man Power</h4>
+                  <h4 class="subheading">Manutentionnaire</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+              </div>
+              <div class="line"></div>
+            </li>
+            <li>
+              <div class="timeline-image">
+                <img class="img-circle img-responsive" src="front/img/mcdonald.png" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>McDonalds</h4>
+                  <h4 class="subheading">Employer de restauration</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+              </div>
+              <div class="line"></div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="img-circle img-responsive" src="front/img/laplage.jpg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>La Plage Parisienne</h4>
+                  <h4 class="subheading">Serveur</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+              </div>
+              <div class="line"></div>
+            </li>
+            <li>
+              <div class="timeline-image">
+                <img class="img-circle img-responsive" src="front/img/lepoles.jpg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>Le Poles solidaire</h4>
+                  <h4 class="subheading">Formation integrateur/developpeur junior</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
       </section>
 
     <!-- Portfolio -->
@@ -261,33 +356,65 @@
         </div>
     </aside>
 
-    <!-- Map -->
+    <!-- Me Contacter -->
     <section id="contact">
 
         <div id="formulaire">
-            <form>
-                <div id="part1" name="part1">
-                <label for="nom">Votre nom :</label>
-                <input type="text" name="nom" id="nom">
-                <br><br>
-                <label for="prenom">Votre prenom :</label>
-                <input type="text" name="prenom" id="prenom">
-                <br><br>
-                <label for=" objet">objet:</label>
-                <input type="text" name=" objet" id=" objet">
-                <br><br>
-                </div>
-                <div id="part2" name="part2">
-                <textarea name="messages" id="messages" type="messages" placeholder="Votre message"> </textarea>
-                <br><br>
-                </div>
+           <form class="form-horizontal">
+              <fieldset>
 
-                
+                <!-- Formulaire -->
+                <legend>Me contacter</legend>
 
-                
+                    <!-- Text input-->
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="nom"></label>  
+                      <div class="col-md-4">
+                      <input id="nom" name="nom" type="text" placeholder="Nom" class="form-control input-md">  
+                      </div>
+                    </div>
 
-                <input type="submit" value="envoyer" name="envoyer" id="envoyer">
+               
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="prenom"></label>  
+                      <div class="col-md-4">
+                      <input id="prenom" name="prenom" type="text" placeholder="Prenom" class="form-control input-md">  
+                      </div>
+                    </div>
 
+                     <div class="form-group">
+                      <label class="col-md-4 control-label" for="email"></label>  
+                      <div class="col-md-4">
+                      <input id="email" name="email" type="text" placeholder="email" class="form-control input-md">  
+                      </div>
+                    </div>
+
+
+              
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="objet"></label>  
+                      <div class="col-md-4">
+                      <input id="objet" name="objet" type="text" placeholder="Objet" class="form-control input-md"> 
+                      </div>
+                    </div>
+
+
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="messages"></label>
+                      <div class="col-md-4">                     
+                        <textarea class="form-control" id="messages" name="messages">Message</textarea>
+                      </div>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="envoyer"></label>
+                      <div class="col-md-4">
+                        <button id="envoyer" name="envoyer" class="btn btn-primary">Envoyer</button>
+                      </div>
+                    </div>
+
+                </fieldset>
             </form>
         </div>
       

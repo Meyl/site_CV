@@ -5,7 +5,7 @@ body{
 	font-family: 'Arsenal', sans-serif;
 	/*font-family: 'Ubuntu', sans-serif;*/
 	/*font-family: 'Merriweather', serif;*/
-	background-color: #F5DEB3;
+	background-color: #F5DEB3
 }
 header{
 	
@@ -26,6 +26,149 @@ h1{
 	color:#FFFFFF;
 
 }
+#fiche{
+	width:100%;
+	height:60px;
+	background-color:black;
+}
+.liste ul li{
+	display: inline-block;
+	margin-right: 15px;
+
+}
+.liste ul li a {
+	text-decoration:none;
+	color: white;
+	display: block;
+	padding: 0 10px;
+}
+.liste ul li a:hover {
+	
+	background-color: #40E0D0;
+}
+
+
+
+.liste{
+
+	width: 950px;
+	margin:0 auto;
+	display: inline-block;
+	float: right;
+	line-height: 50px;
+}
+
+* {
+ margin:0;
+ padding:0;
+ }
+
+li{
+
+
+}
+	
+.infos{
+	background-color:#40E0D0;
+	border:solid; 
+	border-radius: 15px 50px 30px;
+	width: 200px;
+	display: inline-block;
+	-moz-column-width: 12em;
+    -moz-columns: 12em;
+    -webkit-columns: 12em;
+    columns: 12em;
+}
+.icon{
+
+}
+img{
+	border-radius: 50px;
+	margin-top: 1px;
+}
+footer{
+	position:fixed;
+	bottom: 0;
+	height:70px;
+	width:100%;
+	background-color:#4169E1;
+	border-radius: 15px 15px 15px 15px;
+	margin-bottom: 0px;
+	margin-top: 20px;
+
+
+}
+i a:hover{
+	background-color:#40E0D0 ;
+}
+p{
+	text-align: center;
+}
+
+a{
+	float: center;
+}
+#form_a{
+	border:outset;
+	border-radius: 30px 15px ;
+	width:350px;
+	height:75px;
+	margin-left:533px;
+	padding: 50px;
+	background-color: rgba(255, 255, 255, 0.2);
+	
+
+
+}
+
+#date{
+	height:200px; 
+	width:500px;
+	background-color:#FFFFFF;
+	border:groove  ;
+	border-radius:10px;
+	border-color:#4169E1; 
+	margin: auto;
+	-webkit-box-shadow: 5px 5px 5px 5px #3150AB;
+	box-shadow: 5px 5px 5px 5px #3150AB;
+	
+
+
+}
+
+#salut{
+	
+
+}
+.txt{
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 50px;
+}
+.fa{
+	margin-left:30px;
+	padding-left: 7px;
+
+}
+#authentification{
+	margin-left:605px;
+
+
+}
+.formulaire{
+/*	height:100%; */
+	width:400px;
+	border-radius: 30px 14px 50px 11px;
+	background-color:#40E0D0;
+	border: solid;
+	margin-left: 500px
+
+}
+.titre{
+	text-align: center;
+}
+
 #down{
 	color:#F5DEB3;
 }
@@ -35,6 +178,7 @@ h1{
 	text-shadow: 0 0 7px rgba(0,0,0, 0.5);
 }
 
+/*--------- AUTHENTIFICATION  ---------*/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 .btn { display: inline-block; *display: inline; *zoom: 1; padding: 4px 10px 4px; margin-bottom: 0; font-size: 13px; line-height: 18px; color: #333333; text-align: center;text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); vertical-align: middle; background-color: #f5f5f5; background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6); background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6)); background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6); background-image: -o-linear-gradient(top, #ffffff, #e6e6e6); background-image: linear-gradient(top, #ffffff, #e6e6e6); background-repeat: repeat-x; filter: progid:dximagetransform.microsoft.gradient(startColorstr=#ffffff, endColorstr=#e6e6e6, GradientType=0); border-color: #e6e6e6 #e6e6e6 #e6e6e6; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); border: 1px solid #e6e6e6; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); cursor: pointer; *margin-left: .3em; }
 .btn:hover, .btn:active, .btn.active, .btn.disabled, .btn[disabled] { background-color: #e6e6e6; }
@@ -50,7 +194,7 @@ h1{
 
 html { width: 100%; height:100%; overflow:hidden; }
 
-body { 
+.body{ 
 	width: 100%;
 	height:100%;
 	font-family: 'Open Sans', sans-serif;
@@ -70,9 +214,9 @@ body {
 	width:300px;
 	height:300px;
 }
-.login h1 { color: #fff; text-shadow: 0 0 10px rgba(0,0,0,0.3); letter-spacing:1px; text-align:center; }
+.login h2 { color: #fff; text-shadow: 0 0 10px rgba(0,0,0,0.3); letter-spacing:1px; text-align:center; }
 
-input { 
+.champs { 
 	width: 100%; 
 	margin-bottom: 10px; 
 	background: rgba(0,0,0,0.3);
@@ -91,4 +235,4 @@ input {
 	-ms-transition: box-shadow .5s ease;
 	transition: box-shadow .5s ease;
 }
-input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); }
+.champs:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); }
